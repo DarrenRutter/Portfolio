@@ -32,6 +32,11 @@ nav {
     font-size: 22px;
     align-items: center;
     padding: 1px 0 0 0;
+    top: 0px;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+    background-color: #22303c;
 }
 
 nav a {
@@ -72,6 +77,10 @@ a:hover {
     margin-top: 64px;
 }
 
+.skills-container {
+    margin-top: -32px;
+}
+
 .skill-icon {
     width: 80px; 
     height: 80px;
@@ -103,10 +112,9 @@ a:hover {
 
 /* ---------- Footer Section ---------- */
 
-.ending {
-    padding: 48px 0 12px 0;
-}
+
 footer { 
+    padding-top: 48px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
