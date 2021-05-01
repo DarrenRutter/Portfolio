@@ -1,0 +1,113 @@
+/* ---------- Global Styles ---------- */
+
+*{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;  
+    background-color: #22303c;
+    color: #CADAE8;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: 'Handlee', sans-serif;
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: -15px;
+    color: #F2AA52;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* ---------- Nav Section ---------- */
+
+nav { 
+    display: flex; 
+    justify-content: space-evenly;
+    margin-bottom: 8px;
+    font-size: 22px;
+    align-items: center;
+    padding: 1px 0 0 0;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F2AA52;
+}
+
+#current {
+    color: #8C4830;
+}
+
+/* ---------- Open Section ---------- */
+
+.welcome-background {
+    display: flex;
+    height: 700px;
+    background-image: url('./Images/pfp.jpg');
+    opacity: 0.6;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    background-image: no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 60px;
+}
+
+.welcome-message { 
+    text-align: center;
+    opacity: 0.9;
+    width: 100%;
+}
+/* ---------- About Section ---------- */
+
+.about { 
+    margin-top: 64px;
+}
+
+.skill-icon {
+    width: 80px; 
+    height: 80px;
+    display: inline;
+    margin: 0 8px 0 0;
+}
+
+.skill-icon-large {
+    width: 60px;
+    height: 62px;
+    display: inline;
+    margin: 0 16px 0 0;
+}
+
+/* ---------- Work Section ---------- */
+
+.my-work {
+    margin-top: 64px;
+}
+
+/* ---------- Reach Out Section ---------- */
+
+.contact-message { 
+    font-size: 32px;
+    font-family: 'Handlee', sans-serif;
+    text-decoration: none;
+    color: #F2AA52;
+}
+
+/* ---------- Footer Section ---------- */
+
+.ending {
+    padding: 48px 0 12px 0;
+}
+footer { 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

@@ -5,14 +5,14 @@
     <link rel="stylesheet" href="Resources/styles.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <title>I'm Darren Rutter</title>
 </head>
 <!-- End Head Section -->
 
-
 <!-- Start Nav Bar-->
 <nav>
-    <a href=#>Home</a>
+    <a href='#' id='current'>Home</a>
     <a href="#about">About</a>
     <a href='./work.html'>Work</a>
     <a href='./contact.html'>Contact</a>
@@ -22,7 +22,7 @@
 <!-- Start Open Section -->
 <header>
     <div class="welcome-background">
-        <div class="welcome-message">
+        <div class="overlay welcome-message" id="overlay welcome-message">
             <h1>Hey, I'm Darren Rutter</h1>
             <h3>I'm a Software Developer based in South-West London.</h3>
         </div>
@@ -33,29 +33,56 @@
 <!-- Start About Section-->
 <div class="about" id="about">
     <h2 class="about-heading">About Me</h2>
-    <h5 class="about-text">I'm currently based in Kingston upon Thames, South West London.
+    <p class="about-text">I'm currently based in Kingston upon Thames, South West London.
     Having achieved a career in hospitality spanning a decade and working for prestigious establishments like The Dorchester Hotels Collection,
     I'm seeking a new challenge in Software Development, and learning new skills all the time alongside
     a Master's Degree from The University of York, a Russell Group University.
-    </h5>
-    <h3>
+    </p>
+    <br>
+    <h2>
         My Skills
-    </h3>
+    </h2>
+    <br>
     <div class="skills-container">
         <img src="./Resources/Images/html5.jpg" class="skill-icon">
         <img src="./Resources/Images/css3.jpg" class="skill-icon">
-        <img src="./Resources/Images/javascript.jpg" class="skill-icon">
-        <img src="./Resources/Images/c-sharp.jpg" class="skill-icon">
+        <img src="./Resources/Images/javascript.jpg" class="skill-icon-large">
+        <img src="./Resources/Images/c-sharp.jpg" class="skill-icon-large">
+        <img src="./Resources/Images/github.jpg" class="skill-icon-large">
+        <img src="./Resources/Images/java.jpg" class="skill-icon-large">
+
+        <br>
+        <br>
+        <h3 class="skill-icon skill-text">Soon adding React, Redux, Node.js & more!</h3>
+        <br>
+        <br>
     </div>
 </div>
 <!-- End About Section -->
 
+<!-- Start Work Section -->
+<div class='my-work' id='my-work'>
+    <h2>My Work</h2>
+    <h3>
+        Here is showcased some of my projects. You can see the full source code, and links to the webpages on the <a href="./work.html">work</a> page.
+    </h3>
+    <!-- Flex box with screenshots that grow on hover here-->
+</div>
+
+<br>
+
 <!-- Start Reach Out Section -->
 <blockquote>
-    I'm currently looking for work and would love to hear from you if you're interested
-    in working with me, if you're trying to break into a new career like me, or just fancy saying hey!
-    <br>
     <div class="reachout-message">
-        <strong><a href="contact.html">Get in touch!</a></strong>
+        <h2>Whether you want to discuss opportunities or just want to say hello,</h2>
+        <a href="contact.html" class="contact-message">Get in touch!</a>
     </div>
 </blockquote>
+
+
+<h3 class="ending">Darren Rutter</h3>
+<footer>
+    <a href="www.linkedin.com/in/darren-rutter-1a7a25210">LinkedIn</a>
+    <a href="mailto:darren.rutter@hotmail.com">Email</a>
+    <a href="www.twitter.com/DazSmash">Twitter</a>
+</footer>
