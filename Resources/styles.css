@@ -19,6 +19,12 @@ h1 {
     color: #F2AA52;
 }
 
+h2 {
+    font-family: 'Handlee', sans-serif;
+    font-size: 32px;
+    color: #F2AA52;
+}
+
 p {
     font-size: 16px;
 }
@@ -74,7 +80,7 @@ a:hover {
 /* ---------- About Section ---------- */
 
 .about { 
-    margin-top: 64px;
+    margin-top: 80px;
 }
 
 .skills-container {
@@ -98,10 +104,44 @@ a:hover {
 /* ---------- Work Section ---------- */
 
 .my-work {
-    margin-top: 64px;
+    margin-top: 80px;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.portfolio-item {
+    margin-right: 22px;
+    border-radius: 2px;
+    width: auto;
+}
+
+.portfolio-item img {
+    height: 150px;
+    width: 300px;
+    opacity: 1;
+}
+
+.portfolio-item h4 {
+    margin-top: 10px;
 }
 
 /* ---------- Reach Out Section ---------- */
+
+.reachout-message {
+    margin-top: 96px;
+}
 
 .contact-message { 
     font-size: 32px;
@@ -114,7 +154,6 @@ a:hover {
 
 
 footer { 
-    padding-top: 48px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
