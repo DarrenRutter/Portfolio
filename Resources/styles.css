@@ -143,8 +143,9 @@ a:hover {
     margin-top: 96px;
 }
 
-.contact-message { 
-    font-size: 32px;
+.contact-message, 
+.contact-message a { 
+    font-size: 14px;
     font-family: 'Handlee', sans-serif;
     text-decoration: none;
     color: #F2AA52;
@@ -154,6 +155,7 @@ a:hover {
 
 
 footer { 
+    font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
