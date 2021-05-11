@@ -151,6 +151,95 @@ a:hover {
     color: #F2AA52;
 }
 
+/* ---------- Contact Form Section ---------- */
+
+.contact {
+    color: #FFFFFF;
+    min-height: 100vh;
+}
+
+
+
+.form__input input, .form__input textarea {
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 1.2rem;
+    background-color: #CADAE8;
+    color: #000000;
+}
+
+.form__input label::after {
+    content: " *";
+    color: #E01F39;
+}
+
+::placeholder {
+    color: #707070;
+    opacity: 1;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+    opacity: 0.5;
+}
+
+
+.form__input input:focus, .form__input textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 4px 4px rgba(115, 255, 0, 0.66);
+}
+
+.form__input input:focus:invalid, 
+.form__input textarea:focus:invalid {
+    box-shadow: 0px 0px 4px 4px rgba(224,31,57,0.66);
+}
+
+.form__input label {
+    font-size: 1.2rem;
+}
+
+.form__button {
+    width: 150px;
+    padding: 12px 0;
+    font-size: 1.4rem;
+    background-color: #FFD500;
+    color: #000000;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.form__button:hover {
+    color: #FFFFFF;
+    background-color: rgba(115, 255, 0, 0.66);
+}
+
+.contact__info {
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact__info a {
+    padding: 25px;
+    color: rgba(255, 255, 255, 0.8);
+    transition: transform 0.3s ease-out;
+}
+
+.contact__info a:hover {
+    color: #ffffff;
+    transform: translateY(-15px);
+}
+
+@media only screen and (max-width: 400px) {
+    .contact__info a {
+        padding: 15px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+
 /* ---------- Footer Section ---------- */
 
 
