@@ -9,6 +9,7 @@
 
 img {
     max-width: 100%;
+    border-radius: 5px;
 }
 
 h1 {
@@ -236,6 +237,12 @@ input:focus::placeholder, textarea:focus::placeholder {
         padding: 15px;
         color: rgba(255, 255, 255, 0.8);
     }
+}
+
+/* ---------- Projects Section ---------- */
+
+.project_title {
+    color: #f2aa52;
 }
 
 /* ---------- Footer Section ---------- */
