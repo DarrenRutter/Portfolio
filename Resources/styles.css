@@ -132,6 +132,7 @@ a:hover {
     height: 150px;
     width: 300px;
     opacity: 1;
+    box-shadow: 2px 2px 12px 1px rgba(0,0,0,0.6);
 }
 
 .portfolio-item h4 {
@@ -167,6 +168,7 @@ a:hover {
     font-size: 1.2rem;
     background-color: #CADAE8;
     color: #000000;
+    box-shadow: 2px 2px 12px 1px rgba(0,0,0,0.6);
 }
 
 .form__input label::after {
@@ -206,11 +208,14 @@ input:focus::placeholder, textarea:focus::placeholder {
     color: #000000;
     border-style: none;
     border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 12px 1px rgba(0,0,0,0.6);
 }
 
 .form__button:hover {
     color: #FFFFFF;
     background-color: rgba(115, 255, 0, 0.66);
+    box-shadow: 2px 2px 12px 1px rgba(0,0,0,0.6);
 }
 
 .contact__info {
@@ -243,6 +248,43 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 .project_title {
     color: #f2aa52;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+}
+
+.projects_display {
+    max-width: 1000px;
+    margin: 22px 22px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.projects_display img {
+    max-width: 400px;
+    margin-top: 22px;
+    min-width: 280px;
+    flex: 1 1 350px;
+    text-align: center;
+    align-items: flex-end;
+    position: relative;
+    box-shadow: 2px 2px 12px 1px rgba(0,0,0,0.6);
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.projects_display img:hover{
+    transform: scale(1.4);
+    transition: transform 0.5s;
+}
+
+.project_info { 
+    width: 385px;
 }
 
 /* ---------- Footer Section ---------- */
