@@ -7,6 +7,10 @@
     color: #CADAE8;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 img {
     max-width: 100%;
     border-radius: 5px;
@@ -54,10 +58,6 @@ a:hover {
     color: #F2AA52;
 }
 
-#current {
-    color: #8C4830;
-}
-
 /* ---------- Open Section ---------- */
 
 .welcome-background {
@@ -80,8 +80,8 @@ a:hover {
 }
 /* ---------- About Section ---------- */
 
-.about { 
-    margin-top: 80px;
+#about { 
+    margin-top: -40px;
 }
 
 .skills-container {
@@ -102,10 +102,40 @@ a:hover {
     margin: 0 16px 0 0;
 }
 
+.skill-div {
+    display: inline;
+    position: relative;
+    height: 85px;
+    width: 85px;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.skill-description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+    right: 0;
+    color: #F2AA52;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+}
+
+.skill-div:hover .skill-description {
+    visibility: visible;
+    opacity: 1;
+}
+
+.skill-div:hover img {
+    top: -10px;
+}
+
 /* ---------- Work Section ---------- */
 
-.my-work {
-    margin-top: 80px;
+.work-title {
+    margin-bottom: -40px;
 }
 
 .portfolio-container {
@@ -158,6 +188,7 @@ a:hover {
 .contact {
     color: #FFFFFF;
     min-height: 100vh;
+    margin-top: 40px;
 }
 
 .form__input input, .form__input textarea {
