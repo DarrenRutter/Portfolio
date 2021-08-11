@@ -84,6 +84,8 @@ a:hover {
     margin-top: -40px;
 }
 
+/* ---------- Skills Section ---------- */
+
 .skills-container {
     margin-top: -32px;
 }
@@ -169,10 +171,48 @@ a:hover {
     margin-top: 10px;
 }
 
-/* ---------- Reach Out Section ---------- */
 
-.reachout-message {
-    margin-top: 96px;
+/* ---------- Projects Section ---------- */
+
+.project_title {
+    color: #f2aa52;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+}
+
+.projects_display {
+    max-width: 1000px;
+    margin: 22px 22px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.projects_display img {
+    max-width: 400px;
+    margin-top: 22px;
+    min-width: 280px;
+    flex: 1 1 350px;
+    text-align: center;
+    align-items: flex-end;
+    position: relative;
+    box-shadow: 2px 2px 12px 1px rgba(0,0,0,0.6);
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.projects_display img:hover{
+    transform: scale(1.4);
+    transition: transform 0.5s;
+}
+
+.project_info { 
+    width: 385px;
 }
 
 /* ---------- Contact Form Section ---------- */
@@ -271,50 +311,11 @@ input:focus::placeholder, textarea:focus::placeholder {
     }
 }
 
-/* ---------- Projects Section ---------- */
-
-.project_title {
-    color: #f2aa52;
-}
-
-.projects {
-    display: flex;
-    justify-content: center;
-}
-
-.projects_display {
-    max-width: 1000px;
-    margin: 22px 22px 0 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-}
-
-.projects_display img {
-    max-width: 400px;
-    margin-top: 22px;
-    min-width: 280px;
-    flex: 1 1 350px;
-    text-align: center;
-    align-items: flex-end;
-    position: relative;
-    box-shadow: 2px 2px 12px 1px rgba(0,0,0,0.6);
-    -o-object-fit: cover;
-    object-fit: cover;
-}
-
-.projects_display img:hover{
-    transform: scale(1.4);
-    transition: transform 0.5s;
-}
-
-.project_info { 
-    width: 385px;
-}
-
 /* ---------- Footer Section ---------- */
+
+.reachout-message {
+    margin-top: 96px;
+}
 
 
 footer { 
