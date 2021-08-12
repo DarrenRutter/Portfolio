@@ -283,6 +283,10 @@ input:focus::placeholder, textarea:focus::placeholder {
     transform: translateY(-15px);
 }
 
+#message, #email, #name {
+    max-width: 80%;
+}
+
 @media only screen and (max-width: 400px) {
     .contact__info a {
         padding: 15px;
