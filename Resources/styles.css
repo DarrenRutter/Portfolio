@@ -84,8 +84,6 @@ a:hover {
     margin-top: -40px;
 }
 
-/* ---------- Skills Section ---------- */
-
 .skills-container {
     margin-top: -32px;
 }
@@ -94,14 +92,14 @@ a:hover {
     width: 80px; 
     height: 80px;
     display: inline;
-    margin: 0 8px 0 0;
+    margin: 0 8px 8px 0;
 }
 
 .skill-icon-large {
     width: 60px;
     height: 62px;
     display: inline;
-    margin: 0 16px 0 0;
+    margin: 24px 16px 8px 0;
 }
 
 .skill-div {
@@ -133,44 +131,6 @@ a:hover {
 .skill-div:hover img {
     top: -10px;
 }
-
-/* ---------- Work Section ---------- */
-
-.work-title {
-    margin-bottom: -40px;
-}
-
-.portfolio-container {
-    display: flex;
-    justify-content: center;
-}
-
-.photo-grid {
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-}
-
-.portfolio-item {
-    margin-right: 22px;
-    border-radius: 2px;
-    width: auto;
-}
-
-.portfolio-item img {
-    height: 150px;
-    width: 300px;
-    opacity: 1;
-    box-shadow: 2px 2px 12px 1px rgba(0,0,0,0.6);
-}
-
-.portfolio-item h4 {
-    margin-top: 10px;
-}
-
 
 /* ---------- Projects Section ---------- */
 
@@ -214,6 +174,25 @@ a:hover {
 .project_info { 
     width: 385px;
 }
+
+.work-title {
+    margin-bottom: -40px;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
 
 /* ---------- Contact Form Section ---------- */
 
