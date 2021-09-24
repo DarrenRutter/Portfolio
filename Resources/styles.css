@@ -34,6 +34,14 @@ p {
     font-size: 16px;
 }
 
+i, a {
+    transition: color 0.2s linear;
+    -webkit-transition: color 0.2s linear;
+    -moz-transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
+    -ms-transition: color 0.2s linear;
+}
+
 /* ---------- Nav Section ---------- */
 
 nav { 
@@ -88,13 +96,6 @@ a:hover {
     margin-top: -32px;
 }
 
-.skill-icon {
-    width: 80px; 
-    height: 80px;
-    display: inline;
-    margin: 0 8px 8px 0;
-}
-
 .skill-icon-large {
     width: 60px;
     height: 62px;
@@ -109,18 +110,19 @@ a:hover {
     width: 85px;
     top: 0;
     transition: top ease 0.5s;
+    font-size: 64px;
 }
 
 .skill-description {
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 64px;
+    bottom: 64px;
     left: -20px;
     right: 0;
     color: #F2AA52;
     visibility: hidden;
     opacity: 0;
-    transition: opacity .2s, visibility .2s;
+    transition: opacity .4s, visibility .4s;
 }
 
 .skill-div:hover .skill-description {
@@ -312,6 +314,6 @@ footer a {
     font-size: 32px;
 }
 
-.fab:hover, .fas:hover { 
+footer .fab:hover, footer .fas:hover { 
     color: #f2aa52;
 }
