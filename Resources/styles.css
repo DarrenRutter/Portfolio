@@ -297,7 +297,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 /* ---------- Footer Section ---------- */
 
 .reachout-message {
-    margin-top: 96px;
+    margin-top: 72px;
 }
 
 
@@ -306,4 +306,12 @@ footer {
     display: flex;
     text-align: center;
     justify-content: space-evenly;
+}
+
+footer a {
+    font-size: 32px;
+}
+
+.fab:hover, .fas:hover { 
+    color: #f2aa52;
 }
