@@ -1,0 +1,327 @@
+/* ---------- Global Styles ---------- */
+
+*{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;  
+    background-color: #22303c;
+    color: #CADAE8;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+h1 {
+    font-family: 'Handlee', sans-serif;
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: -15px;
+    color: #F2AA52;
+}
+
+h2 {
+    font-family: 'Handlee', sans-serif;
+    font-size: 32px;
+    color: #F2AA52;
+}
+
+p {
+    font-size: 16px;
+}
+
+i, a {
+    transition: color 0.2s linear;
+    -webkit-transition: color 0.2s linear;
+    -moz-transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
+    -ms-transition: color 0.2s linear;
+}
+
+/* ---------- Nav Section ---------- */
+
+nav { 
+    display: flex; 
+    justify-content: space-evenly;
+    margin-bottom: 8px;
+    font-size: 22px;
+    align-items: center;
+    padding: 8px;
+    top: 0px;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+    background-color: #22303c;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F2AA52;
+}
+
+@media only screen and (max-width: 600px) {
+    nav a {
+        font-size: 16px;
+    }
+}
+
+/* ---------- Open Section ---------- */
+
+.welcome-background {
+    display: flex;
+    height: 700px;
+    background-image: url('./Images/pfp.jpg');
+    opacity: 0.6;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    background-image: no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 60px;
+}
+
+.welcome-message { 
+    text-align: center;
+    opacity: 0.9;
+    width: 100%;
+}
+
+/* ---------- About Section ---------- */
+
+#about { 
+    margin-top: -40px;
+}
+
+.skills-container {
+    margin-top: -32px;
+}
+
+.skill-icon-large {
+    width: 60px;
+    height: 62px;
+    display: inline;
+    margin: 24px 16px 8px 0;
+}
+
+.skill-div {
+    display: inline;
+    position: relative;
+    height: 85px;
+    width: 85px;
+    top: 0;
+    transition: top ease 0.5s;
+    font-size: 64px;
+}
+
+.skill-description {
+    position: absolute;
+    top: 64px;
+    bottom: 64px;
+    left: -20px;
+    right: 0;
+    color: #F2AA52;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+}
+
+.skill-div:hover .skill-description {
+    visibility: visible;
+    opacity: 1;
+}
+
+.skill-div:hover img {
+    top: -10px;
+}
+
+/* ---------- Projects Section ---------- */
+
+.project_title {
+    color: #f2aa52;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+}
+
+.projects_display {
+    max-width: 1000px;
+    margin: 22px 22px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.projects_display img {
+    max-width: 400px;
+    margin-top: 22px;
+    min-width: 280px;
+    flex: 1 1 350px;
+    text-align: center;
+    align-items: flex-end;
+    position: relative;
+    box-shadow: 2px 2px 12px 1px rgba(0,0,0,0.6);
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.projects_display img:hover{
+    transform: scale(1.4);
+    transition: transform 0.5s;
+}
+
+.project_info { 
+    width: 385px;
+}
+
+.work-title {
+    margin-bottom: -40px;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/* ---------- Contact Form Section ---------- */
+
+.contact {
+    color: #FFFFFF;
+    min-height: 100vh;
+    margin-top: 40px;
+}
+
+.form__input input, .form__input textarea {
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 1.2rem;
+    background-color: #CADAE8;
+    color: #000000;
+    box-shadow: 2px 2px 12px 1px rgba(0,0,0,0.6);
+}
+
+.form__input textarea {
+    resize: none;
+}
+
+.form__input label::after {
+    content: " *";
+    color: #E01F39;
+}
+
+::placeholder {
+    color: #707070;
+    opacity: 1;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+    opacity: 0.5;
+}
+
+
+.form__input input:focus, .form__input textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 4px 4px rgba(115, 255, 0, 0.66);
+}
+
+.form__input input:focus:invalid, 
+.form__input textarea:focus:invalid {
+    box-shadow: 0px 0px 4px 4px rgba(224,31,57,0.66);
+}
+
+.form__input label {
+    font-size: 1.2rem;
+}
+
+.form__button {
+    width: 150px;
+    padding: 12px 0;
+    font-size: 1.4rem;
+    background-color: #FFD500;
+    color: #000000;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 12px 1px rgba(0,0,0,0.6);
+    transition: 0.4s ease;
+}
+
+.form__button:hover {
+    color: #FFFFFF;
+    background-color: rgba(115, 255, 0, 0.66);
+    box-shadow: 2px 2px 12px 1px rgba(0,0,0,0.6);
+}
+
+.contact__info {
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact__info a {
+    padding: 25px;
+    color: rgba(255, 255, 255, 0.8);
+    transition: transform 0.3s ease-out;
+}
+
+.contact__info a:hover {
+    color: #ffffff;
+    transform: translateY(-15px);
+}
+
+#message, #email, #name {
+    max-width: 80%;
+}
+
+@media only screen and (max-width: 400px) {
+    .contact__info a {
+        padding: 15px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+/* ---------- Footer Section ---------- */
+
+.reachout-message {
+    margin-top: 72px;
+}
+
+
+footer { 
+    font-size: 14px;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+footer a {
+    font-size: 32px;
+}
+
+footer .fab:hover, footer .fas:hover { 
+    color: #f2aa52;
+}
